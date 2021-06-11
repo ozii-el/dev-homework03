@@ -113,6 +113,44 @@ namespace dev_homework03
             Console.WriteLine("********************"); 
             Console.WriteLine("\n");
 
+            /*Console.WriteLine("\n");
+            Console.WriteLine("********************");
+            Console.WriteLine("Tarea - 04");
+            Console.WriteLine("Diagonal Difference");
+            Console.WriteLine("\n");
+
+
+            var diagonalUno = 0;
+            var diagonalDos = 0;
+            Console.WriteLine("Introduce los numeros:");
+            var n = int.Parse(Console.ReadLine());
+            for (int i = 0, j = n - 1; i < n; i++, j--)
+            {   
+                Console.WriteLine("Introduce los numeros:");
+                var a_temp = Console.ReadLine().Split(' ');
+                var newRow = Array.ConvertAll(a_temp, int.Parse);
+                diagonalUno += newRow[i];
+                diagonalDos += newRow[j];
+            }
+            Console.WriteLine(Math.Abs(diagonalUno - diagonalDos));*/
+
+            Console.WriteLine("\n");
+            Console.WriteLine("********************");
+            Console.WriteLine("Tarea - 05");
+            Console.WriteLine("Staircase");
+            Console.WriteLine("\n");
+
+            Console.WriteLine("¿De cúantos niveles quieres la escalera?");
+            var n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+            var spaces = new String(' ', n - i);
+            var hashes = new String('#', i);
+            Console.WriteLine(spaces + hashes);
+            }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("********************");
 
 
 
